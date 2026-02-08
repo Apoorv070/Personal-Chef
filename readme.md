@@ -41,57 +41,6 @@ The `personal_chef.ipynb` notebook demonstrates the core functionality of the Pe
 - Jupyter Notebook
 - Required Python libraries (pandas, scikit-learn, numpy, matplotlib)
 
-### Installation
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/persona-chef.git
-   cd persona-chef
-   ```
-
-2. Install required packages:
-   ```
-   pip install -r requirements.txt
-   ```
-
-3. Launch Jupyter Notebook:
-   ```
-   jupyter notebook
-   ```
-
-4. Open `personal_chef.ipynb` to explore the implementation
-
-## Example Usage
-
-```python
-# Create a user profile
-user_profile = PersonaChef.create_profile(
-    preferences=["Italian", "Mexican", "Thai"],
-    restrictions=["vegetarian"],
-    cooking_time=30,  # minutes
-    skill_level="intermediate"
-)
-
-# Get personalized recipe recommendations
-recommendations = user_profile.get_recommendations(top_n=5)
-
-# Generate a meal plan for the week
-meal_plan = user_profile.generate_meal_plan(
-    days=7,
-    meals_per_day=3,
-    calories_per_day=2000
-)
-
-# Find recipes with available ingredients
-available_ingredients = ["chicken", "rice", "bell peppers", "onions", "garlic"]
-matching_recipes = user_profile.find_recipes_by_ingredients(available_ingredients)
-```
-
-## Data Sources
-
-- Recipe data from [Food.com](https://www.food.com/)
-- Nutritional information from [USDA FoodData Central](https://fdc.nal.usda.gov/)
-- Ingredient substitutions from [The Cook's Thesaurus](http://www.foodsubs.com/)
 
 ## Future Enhancements
 
@@ -105,11 +54,7 @@ matching_recipes = user_profile.find_recipes_by_ingredients(available_ingredient
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgements
 
-- Recipe data providers
-- Nutritional database contributors
-- Open source machine learning libraries
 
 ---
 
